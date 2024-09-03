@@ -63,7 +63,7 @@
         <div class="menus"><i class="bx bx-search"></i></div>
       </div>
       <div class="home-img">
-        <img src="Slider.png" alt="" />
+        <img src="./images/Slider.png" alt="" />
         <div class="left-side-slider">
           Admission 2023 - 2024
           <div></div>
@@ -88,7 +88,7 @@
     <section class="section-2">
       <div class="bar-1">
         <div class="founder">
-          <img src="Founder-cropped.png" alt="" />
+          <img src="./images/Founder-cropped.png" alt="" />
           <div>Founder</div>
           <div>Kalaithanthai Karumuttu Thiagarajan Chettiar</div>
         </div>
@@ -195,9 +195,9 @@
             <i class="bx bxs-left-arrow"></i>
           </div>
           <div class="slider-image">
-            <img src="book-1.png" class="slider-imgs" alt="" />
-            <img src="book-1.png" class="slider-imgs" alt="" />
-            <img src="book-1.png" class="slider-imgs" alt="" />
+            <img src="./images/book-1.png" class="slider-imgs" alt="" />
+            <img src="./images/book-1.png" class="slider-imgs" alt="" />
+            <img src="./images/book-1.png" class="slider-imgs" alt="" />
           </div>
           <div class="right-slider-button" onclick="next()">
             <i class="bx bxs-right-arrow"></i>
@@ -243,11 +243,11 @@
       </div>
       <div class="vertical-bar"></div>
       <div class="media-icons">
-        <a href="#"><img src="media-icons/web.png" alt="" /></a>
-        <a href="#"><img src="media-icons/instagram.png" alt="" /></a>
-        <a href="#"><img src="media-icons/facebook.png" alt="" /></a>
-        <a href="#"><img src="media-icons/twitter.png" alt="" /></a>
-        <a href="#"><img src="media-icons/youtube.png" alt="" /></a>
+        <a href="#"><img src="./images/media-icons/web.png" alt="" /></a>
+        <a href="#"><img src="./images/media-icons/instagram.png" alt="" /></a>
+        <a href="#"><img src="./images/media-icons/facebook.png" alt="" /></a>
+        <a href="#"><img src="./images/media-icons/twitter.png" alt="" /></a>
+        <a href="#"><img src="./images/media-icons/youtube.png" alt="" /></a>
       </div>
     </footer>
   </body>
