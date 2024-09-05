@@ -48,6 +48,11 @@ section {
   font-weight: 400;
   font-size: 1.1em;
 }
+
+.menu-section div {
+  cursor: pointer;
+}
+
 .home-img {
   height: 60vh;
 }
@@ -73,12 +78,16 @@ section {
   padding: 18px;
   color: var(--indigo-dye);
   font-weight: 800;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif
 }
 .institution-menus div i {
   font-size: 1.7em;
   margin-right: 12px;
   color: var(--bice-blue);
+}
+
+.institution-menus div {
+  cursor: pointer;
 }
 
 /* SECTION-2 */
