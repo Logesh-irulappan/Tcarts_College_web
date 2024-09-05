@@ -51,7 +51,10 @@
       <div class="bar-1">
         <div class="founder">
           <img src="./images/Founder-cropped.png" alt="" />
+<<<<<<< HEAD
           <!-- <img src="./images/Founder-cropped.png" alt="" /> -->
+=======
+>>>>>>> 4a36c8776056a3446846e59a31f7d7340ef6d896
           <div>Founder</div>
           <div>Kalaithanthai Karumuttu Thiagarajan Chettiar</div>
         </div>
@@ -102,7 +105,7 @@
         <div>
           Under Graduate <br />
           Programmes
-          <div id="29" class="counter">0</div>
+          <div id="13" class="counter">0</div>
         </div>
         <div>
           Ph.D. <br />
@@ -117,7 +120,7 @@
         <div>
           Post Graduate <br />
           Students
-          <div id="2900" class="counter">0</div>
+          <div id="469" class="counter">0</div>
         </div>
         <div>
           Research <br />
@@ -181,7 +184,9 @@
             </ul>
           </div>
         </div>
+        
       </div>
+      
     </section>
     <footer>
       <div class="qr-code">
@@ -213,60 +218,8 @@
         <a href="#"><img src="./images/media-icons/youtube.png" alt="" /></a>
       </div>
     </footer>
+    <script src="./index.js">
+  
+      </script>
   </body>
 </html>
-<script>
-  let lastScroll = 0;
-  window.addEventListener("scroll", () => {
-    const currentScroll = window.pageYOffset;
-    const menusection = document.querySelector(".menu-section");
-    const header = document.querySelector(".header");
-    if (currentScroll <= 0 && menusection.classList.contains("sticky")) {
-      menusection.classList.remove("sticky");
-      menusection.firstElementChild.style.display = "none";
-      header.classList.remove("m-t");
-      return;
-    }
-    if (currentScroll > 120 && !menusection.classList.contains("sticky")) {
-      menusection.classList.add("sticky");
-      menusection.firstElementChild.style.display = "flex";
-      header.classList.add("m-t");
-    }
-  });
-  // SLIDER IMAGE 
-  var counter = 0;
-  const slider = document.querySelectorAll(".slider-image img");
-  slider.forEach((slide, ind) => {
-    console.log(slide);
-    console.log(ind);
-    slide.style.left = `${ind * 100}%`;
-  });
-  const prev = () => {
-    counter--;
-    slideImage();
-  };
-  const next = () => {
-    counter++;
-    slideImage();
-  };
-  const slideImage = () => {
-    slider.forEach((imgs) => {
-      if (counter == 3) {
-        counter = 0;
-      } else if (counter < 0) {
-        counter = 2;
-      }
-      imgs.style.transform = `translateX(-${counter * 100}%)`;
-    });
-  };
-  
-  document.querySelectorAll(".counter").forEach((element,i)=>{
-    setInterval(()=>{
-      element.innerHTML = Number(element.innerHTML) + 1;
-      if (element.innerHTML == element.id)
-      {
-        clearInterval(i+1);
-      }
-    },50);
-  });
-</script>
