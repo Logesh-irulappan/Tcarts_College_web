@@ -67,5 +67,12 @@ let lastScroll = 0;
     window.requestAnimationFrame(step);
   }
   
-  
+  // SIDE-NOTICE BOARD
+
+  document.querySelector(".side-noticeBoard .toggle-btn").addEventListener("click", () => {
+    console.log("Notice Button is Clicked");
+    document.querySelector(".side-noticeBoard").classList.toggle("active");
+  });
+
+  // NOTICE BOARD END
   
