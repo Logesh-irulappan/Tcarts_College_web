@@ -78,66 +78,86 @@ let lastScroll = 0;
 
   // GRAPH'S Script 
 
-  var xValues = ["2016","2017","2018","2019","2020","2021","2022"];
-  var barColors = ["red", "green","blue","orange","brown","lightblue","grey"];
-  var yValues = [492, 542, 516, 512, 456, 518, 567];
-  var x = ["Boys","Girls"];
-  var y = [2327,3000];
-  var b = ["#f7dc6f","#5dade2"];
-  var chart1 = new Chart("myChart", {
-    type: "bar",
-    data: {
-      labels: xValues,
-      datasets: [{
-      backgroundColor: barColors,
-      data: yValues,
-      }]
-    },
-    options: {
-      legend: { display: false },
-      title: {
-        display: true,
-        text: "Placement", 
-        fontSize:18,
-        fontColor:"black",
-        position:'top',
+  // Define your chart data and configuration
+  var xValues = ["2016", "2017", "2018", "2019", "2020", "2021", "2022"];
+  var barColors = ["red", "green", "blue", "orange", "brown", "lightblue", "grey"];
+  var yValues = [192, 542, 616, 512, 456, 518, 577];
+  var x = ["Boys", "Girls"];
+  var y = [2327, 3000];
+  var b = ["#f7dc6f", "#5dade2"];
+  
+  // Function to create or update the bar chart
+  function createBarChart() {
+    new Chart("myChart", {
+      type: "bar",
+      data: {
+        labels: xValues,
+        datasets: [{
+          backgroundColor: barColors,
+          data: yValues,
+        }]
       },
-      plugins: {
-        datalabels: {
-          anchor: 'end',
-          align: 'end',
-          color: 'black',
-          font: {
-            weight: 'bold'
-          },
-          formatter: function(value) {
-            return value;
+      options: {
+        legend: { display: false },
+        title: {
+          display: true,
+          text: "Placement",
+          fontSize: 18,
+          fontColor: "black",
+          position: 'top',
+        },
+        plugins: {
+          datalabels: {
+            anchor: 'end',
+            align: 'end',
+            color: 'black',
+            font: {
+              weight: 'bold'
+            },
+            formatter: function(value) {
+              return value;
+            }
           }
         }
+      },
+      plugins: [ChartDataLabels]
+    });
+  }
+  
+  // Function to create or update the pie chart
+  function createPieChart() {
+    new Chart("pieChart", {
+      type: "pie",
+      data: {
+        labels: x,
+        datasets: [{
+          backgroundColor: b,
+          data: y
+        }]
+      },
+      options: {
+        title: {
+          display: true,
+          text: "Student strength",
+          fontSize: 18,
+          fontColor: "black",
+        }
       }
-    },
-    plugins: [ChartDataLabels]
-  });
-
-  var chart2 = new Chart("pieChart", {
-    type: "pie",
-    data: {
-      labels: x,
-      datasets: [{
-        backgroundColor: b,
-        data: y
-      }]
-    },
-    options: {
-      title: {
-        display: true,
-        text: "Student strength",
-        fontSize:18,
-        fontColor:"black",
+    });
+  }
+  
+  // Intersection Observer to detect when the chart container is visible
+  var chartContainer = document.querySelector('.charts'); // Replace with your chart container element's ID
+  
+  var observer = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        createBarChart();
+        createPieChart();
+        observer.unobserve(entry.target); // Stop observing after charts are created
       }
-    }
-  });
-
-  // Graph's Script End
-      
+    });
+  }, { threshold: 0.1 }); // Adjust threshold as needed
+  
+  observer.observe(chartContainer);
   
