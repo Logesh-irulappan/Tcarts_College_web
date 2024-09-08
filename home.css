@@ -398,3 +398,29 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/* Chart's CSS start */
+
+.charts {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#myChart {
+  width: 100%;
+  max-width: 500px;
+  display: inline-block; 
+  margin-top: 10%;
+  position: relative; bottom: 70px;
+}
+
+#pieChart {
+  width: 50%;
+  max-width: 500px;
+  display: inline-block;
+  position: relative; top: 8px;
+}
+
+/* Charts Styling ends here */

@@ -75,4 +75,69 @@ let lastScroll = 0;
   });
 
   // NOTICE BOARD END
+
+  // GRAPH'S Script 
+
+  var xValues = ["2016","2017","2018","2019","2020","2021","2022"];
+  var barColors = ["red", "green","blue","orange","brown","lightblue","grey"];
+  var yValues = [192, 542, 616, 512, 456, 618, 577];
+  var x = ["Boys","Girls"];
+  var y = [2327,3000];
+  var b = ["#f7dc6f","#5dade2"];
+  var chart1 = new Chart("myChart", {
+    type: "bar",
+    data: {
+      labels: xValues,
+      datasets: [{
+      backgroundColor: barColors,
+      data: yValues,
+      }]
+    },
+    options: {
+      legend: { display: false },
+      title: {
+        display: true,
+        text: "Placement", 
+        fontSize:18,
+        fontColor:"black",
+        position:'top',
+      },
+      plugins: {
+        datalabels: {
+          anchor: 'end',
+          align: 'end',
+          color: 'black',
+          font: {
+            weight: 'bold'
+          },
+          formatter: function(value) {
+            return value;
+          }
+        }
+      }
+    },
+    plugins: [ChartDataLabels]
+  });
+
+  var chart2 = new Chart("pieChart", {
+    type: "pie",
+    data: {
+      labels: x,
+      datasets: [{
+        backgroundColor: b,
+        data: y
+      }]
+    },
+    options: {
+      title: {
+        display: true,
+        text: "Student strength",
+        fontSize:18,
+        fontColor:"black",
+      }
+    }
+  });
+
+  // Graph's Script End
+      
   
