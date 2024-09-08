@@ -67,20 +67,20 @@ let lastScroll = 0;
     window.requestAnimationFrame(step);
   }
   
-  // SIDE-NOTICE BOARD
+  // SIDE-NOTICE BOARD Script Starts
 
   document.querySelector(".side-noticeBoard .toggle-btn").addEventListener("click", () => {
     console.log("Notice Button is Clicked");
     document.querySelector(".side-noticeBoard").classList.toggle("active");
   });
 
-  // NOTICE BOARD END
+  // NOTICE BOARD Script END
 
   // GRAPH'S Script 
 
   var xValues = ["2016","2017","2018","2019","2020","2021","2022"];
   var barColors = ["red", "green","blue","orange","brown","lightblue","grey"];
-  var yValues = [192, 542, 616, 512, 456, 618, 577];
+  var yValues = [492, 542, 516, 512, 456, 518, 567];
   var x = ["Boys","Girls"];
   var y = [2327,3000];
   var b = ["#f7dc6f","#5dade2"];

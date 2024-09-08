@@ -402,7 +402,6 @@ img {
 /* Chart's CSS start */
 
 .charts {
-  margin-top: 40px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
