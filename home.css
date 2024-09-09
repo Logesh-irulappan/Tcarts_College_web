@@ -49,6 +49,10 @@ section {
   font-size: 1.1em;
 }
 
+/* .menu-section .menus.hover {
+  background-color: #fff;
+} */
+
 .menu-section div {
   cursor: pointer;
 }
@@ -80,39 +84,46 @@ section {
   height: 45%;
   z-index: 1000;
   background-color: #fff;
-  border-radius: 0px 20px 20px 0px;
+  /* border-radius: 0px 20px 20px 0px; */
   transition: right 600ms ease-in-out;
 } 
 
 .side-noticeBoard.active {
   position: absolute; top: 30%;
-  left: -0.1%;
+  left: -0.2%;
 }
 
 .side-noticeBoard .toggle-btn {
   position: absolute;
-  top: 20%;
+  top: 0.5%;
   left: 100%;
   background-color: var(--indigo-dye);
   color: #fff;
-  height: 15%;
-  padding: 10px;
-  width: 7%;
-  border-radius: 0px 10px 10px 0px;
+  height: 99.5%;
+  width: 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border-radius: 0px 10px 10px 0px; */
   font-size: larger;
   text-align: center;
   cursor: pointer;
 }
 
-.side-noticeBoard.active .toggle-btn i.fa {
-  transform: rotate(180deg);
+.side-noticeBoard .toggle-btn p {
+  transform: rotate(270deg);
+  padding: 5%;
+  font-size: x-large;
+  letter-spacing: 6px;
+  width: 1000%;
 }
 
 .noticeBoard {
-  background-color: var(--indigo-dye);
+  background-color: whitesmoke;
   width: 100%;
   height: 100%;
-  border-radius: 0px 20px 20px 0px;
+  /* border-radius: 0px 20px 20px 0px; */
 }
 
 .noticeBoard .headNotice {
@@ -127,14 +138,14 @@ section {
   font-size: 1em;
 }
 
-.headNotice i {
+/* .headNotice i {
   font-size: 150%;
   padding: 10px;
 }
 
 .headNotice h1 {
   margin-right: 10%;
-}
+} */
 
 .noticeBoard .content {
   font-family: "Roboto", "sans-serif";
@@ -142,20 +153,19 @@ section {
   font-size: 1em;
   width: 90%;
   height: 90%;
-  color: #fff;
-  border-radius: 0px  0px 20px 0px;
+  color: black;
   margin-right: 5%;
   margin-left: 5%;
 }
 
 .noticeBoard .content marquee {
   width: 100%;
-  height: 80%;
+  height: 100%;
 }
 
 .noticeBoard .content marquee ul li {
   margin-top: 10%;
-}
+} 
 
 /* Sidebar notice board End */
 
@@ -406,6 +416,17 @@ img {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  
+}
+
+.charts .companies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.charts .companies img {
+  width: 80%;
 }
 
 #myChart {
@@ -417,7 +438,8 @@ img {
 }
 
 #pieChart {
-  width: 50%;
+  width: 60%;
+  /* height: 200%; */
   max-width: 500px;
   display: inline-block;
   position: relative; top: 8px;
