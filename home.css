@@ -427,7 +427,7 @@ img {
 
 /* Slider Styling starts here */
 
-/* .Slider-heading {
+.Slider-heading {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -506,6 +506,6 @@ span:hover+ img{
     width: 100%;
     height: 100%;
     border-radius: 2%;
-} */
+ } 
 
 /* Slider Styling ends here */
