@@ -35,29 +35,72 @@
           <div class="menus"><i class="bx bx-search"></i></div>
       </div>
       <div class="home-img">
+        <div class="frames">
+          <div class="left-1">
+            <div>
+              <h4 class="vision">VISION</h4 class="vision">
+              <p class="vision_info">To serve the society by providing 
+                affordable quality higher education 
+                to all at all times.
+
+              </p>
+            </div>
+            <div>
+              <h4 class="vision">MISSION</h4 class="vision">
+              <p class="vision_info">
+                To provide a gender friendly academic ambience
+                that ensures knowledge-acquisition through student teacher synergy 
+                resulting in character development and career readiness.
+
+              </p>
+            </div>
+          </div>
+          <div class="left-2">
+            <div class="notice_board">
+              <span class="notice_board_title">Notice Board</span>
+              <div class="notice_board_content">
+                  <div class="marquee">
+                      <p>Notice 1: This is the first notice.</p>
+                      <p>Notice 2: This is the second notice.</p>
+                      <p>Notice 3: This is the third notice.</p>
+                      <p>Notice 4: This is the fourth notice.</p>
+                  </div>
+              </div>
+          </div>
+          </div>
+        </div>
           <img src="./images/Slider.png" alt="Banner Image" align="bottom" />
+          <div class="frames">
+            <div class="right-1">
+              <img src="./images/Founder-cropped.png"  alt="founder"/>
+              <h4 class="vision">
+              Founder</h4>
+            </div>
+            <div class="right-2">
+              <div class="notice_board">
+                <span class="notice_board_title">News & Events</span>
+                <div class="notice_board_content">
+                    <div class="marquee">
+                      <p>Event 1: This is the first event.</p>
+                      <p>Event 2: This is the second event.</p>
+                      <p>Event 3: This is the third event.</p>
+                      <p>Event 4: This is the fourth event.</p>
+                    </div>
+                </div>
+            </div>
+              
+          </div>
+          </div>
+          
           <!-- Notice Board Starts here -->
           <div class="side-noticeBoard">
             <div class="toggle-btn">
               <p>Notice Board</p>
             </div>
-            <div class="noticeBoard">
-            <hr>
-            <div class="content">
-              <marquee class="" direction="up" loop="">
-                <ul>
-                  <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo soluta assumenda, harum sint quis fugiat mollitia maxime temporibus molestiae facere?</li>
-                  <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, molestias..</li>
-                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, odit.</li>
-                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, rem?</li>
-                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias assumenda repudiandae labore neque fuga itaque a mollitia? Consequuntur, ea quod.</li>
-                  <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi labore, molestiae quia recusandae ipsa ad laborum sit praesentium a? Consequatur?</li>
-                </ul>
-              </marquee>
-            </div>
-          </div>
+            
         </div>
-      <!-- Side Notice Board ends here -->
+        <!-- Side Notice Board ends here -->
+
       </div>
       <div><marquee class="marq" direction="left" loop=""> Scrolling of Important Updates</marquee></div>
       <div class="institution-menus">
@@ -73,47 +116,28 @@
   </section>
     <section class="section-2">
       <div class="bar-1">
-        <div class="founder">
-          <img src="./images/Founder-cropped.png" alt="" />
-          <!-- <img src="./images/Founder-cropped.png" alt="" /> -->
-          <div>Founder</div>
-          <div>Kalaithanthai Karumuttu Thiagarajan Chettiar</div>
-        </div>
-        <div class="vision-mission">
-          <div class="vision">
-            Vision
-            <div>
-              To serve the society by providing <br />
-              affordable quality higher <br />
-              education to all at all times.
-            </div>
-          </div>
-          <div class="mission">
-            Mission
-            <div>
-              To provide a gender friendly academic ambience that ensures
-              knowledge-acquisition through student teacher synergy resulting in
-              character development and career readiness.
-            </div>
-          </div>
-        </div>
-        <div class="book">
-          <img src="./images/book-1.png" alt="" />
+        <div class="charts">
+          
+          <canvas  id="myChart"></canvas>
           <div>
-            A Journey into the <br />
-            Founding Vision
-          </div>
-          <div class="buy-link">
-            Buy here: <br />
-            https://www.tce.edu/buybook
-          </div>
+          <canvas width="200" height="200" id="pieChart"></canvas>
+        </div>
+        </div>
+        <div  class="company">
+          <img src="./images/Companies.jpeg" alt="company"/>
         </div>
         <div class="book">
-          <img src="./images/book-1.png" alt="" />
-          <div>Madurai Malligai</div>
-          <div class="buy-link">
-            Buy here: <br />
-            https://www.maduraimalli.com
+          <div class="book-1">
+            <img src="./images/book-1.png" alt="" />
+            <div>
+              A Journey into the Founding Vision
+            </div>
+          </div>
+          <div class="book-2">
+            <img src="./images/book-1.png" alt="" />
+            <div>
+              A Journey into the Founding Vision
+            </div>
           </div>
         </div>
       </div>
@@ -158,70 +182,8 @@
           <div id="86" class="counter">0</div>
         </div>
       </div>
-      <div class="bar-3">
-        <div class="events">
-          <div class="events-title">
-            <i class="bx bxs-calendar"></i>
-            <span>Events and News</span>
-          </div>
-          <div class="events-list">
-            <marquee class="" direction="up" loop="">
-              <ul>
-                <li>Practical Examination commense from 11.04.2024</li>
-                <li>Practical Examination commense from 11.04.2024</li>
-                <li>Coming Friday will be a holiday</li>
-              </ul>
-            </marquee>
-          </div>
-        </div>
-        <div class="slider">
-          <div class="left-slider-button" onclick="prev()">
-            <i class="bx bxs-left-arrow"></i>
-          </div>
-          <div class="slider-image">
-            <img src="./images/book-1.png" class="slider-imgs" alt="" />
-            <img src="./images/book-1.png" class="slider-imgs" alt="" />
-            <img src="./images/book-1.png" class="slider-imgs" alt="" />
-            <img src="./images/book-1.png" class="slider-imgs" alt="" />
-            <img src="./images/book-1.png" class="slider-imgs" alt="" />
-            <img src="./images/book-1.png" class="slider-imgs" alt="" />
-          </div>
-          <div class="right-slider-button" onclick="next()">
-            <i class="bx bxs-right-arrow"></i>
-          </div>
-        </div>
-        <div class="achievements">
-          <div class="achievements-title">Achievements</div>
-          <div class="achievements-list">
-            <ul>
-              <li>A++ rank in NAAC</li>
-              <li>22nd Rank in NIRF</li>
-              <li>AIIRA Brand Performer</li>
-              <li>5S Certified</li>
-            </ul>
-            <ul>
-              <li>NPTEL Best Performer</li>
-              <li>Self Finance College</li>
-            </ul>
-          </div>
-        </div>
-        
-      </div>      
     </section>
-    <!-- Charts start here! -->
-     <!-- <div class="recuirment">
-      <h1>RE</h1>
-     </div> -->
-    <div class="charts">
-      <canvas id="myChart"></canvas>
-      <div class="companies">
-        <img src="./images/Companies.jpeg" alt="">
-      </div>
-      <canvas id="pieChart"></canvas>
-    </div>
-    <!-- Charts end here -->
-
-    <!-- Slider starts here -->
+        <!-- Slider starts here -->
      <div class="Slider-heading">
         <h1 class="sliderHeading">Academics and Co-curricular Activities</h1>
      </div>
@@ -258,13 +220,7 @@
       </div>
     <!-- Slider ends here -->
     <footer>
-      <div class="qr-code">
-        <img
-          src="https://manula.r.sizr.io/large/user/14997/img/eurd-web-bar-code-qr-code.png"
-          alt=""
-        />
-      </div>
-      <div class="contact">
+    <div class="contact">
         <div>Contact:</div>
         <div>
           #139-140, Kamarajar Salai, Madurai - 625009, India <br />

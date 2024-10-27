@@ -98,6 +98,7 @@ let lastScroll = 0;
         }]
       },
       options: {
+       
         legend: { display: false },
         title: {
           display: true,
@@ -106,6 +107,7 @@ let lastScroll = 0;
           fontColor: "black",
           position: 'top',
         },
+       
         plugins: {
           datalabels: {
             anchor: 'end',
@@ -136,6 +138,7 @@ let lastScroll = 0;
         }]
       },
       options: {
+        
         title: {
           display: true,
           text: "Student strength",
